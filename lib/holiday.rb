@@ -62,8 +62,13 @@ def all_supplies_in_holidays(holiday_hash)
   #   New Years: Party Hats
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
-  # etc.
 
+  #  :christmas => ["Lights", "Wreath"],
+  holiday_hash.each do |season, season_holidays_hash|
+    season_holidays_hash.each do |holiday_name, supplies|
+      binding.pry
+    end
+  end
 
 end
 
