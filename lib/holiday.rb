@@ -40,7 +40,13 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  holiday_hash[season]= holiday_name
+  holiday_hash[season] = holiday_name
+
+  counter = 0
+  while counter < supply_array.length
+    holiday_hash[season][holiday_name] << supply_array[counter]
+    counter += 1
+  end
   binding.pry
 end
 
