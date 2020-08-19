@@ -47,7 +47,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
     holiday_hash[season.to_sym][holiday_name.to_sym] << supply_array[counter]
     counter += 1
   end
-  # binding.pry
+  binding.pry
   holiday_hash
 end
 
